@@ -1,7 +1,5 @@
 # Week 07 – NLP & Production Readiness
 
-PG Diploma · AI‑ML & Agentic AI Engineering · IIT Gandhinagar
-
 This repo contains all Week 07 daily assignments (Days 37–40) built on the ShopSense e‑commerce datasets.
 The focus is on TF‑IDF, embeddings, sentiment analysis, hard NLP patterns, and production‑grade evaluation.
 
@@ -33,9 +31,8 @@ pip install numpy pandas scikit-learn scipy gensim vaderSentiment sentence-trans
 > Some days use only a subset of these; installing all once keeps things simple.
 
 You also need the ShopSense datasets provided on LMS:
-- `shopsense_reviews-2.csv`
-- `shopsense_customers-3.csv` (used mainly for reference / later days)
-- `product_reviews.csv` (Friday checkpoint version)
+- `shopsense_reviews.csv`
+- `shopsense_customers.csv` (used mainly for reference / later days)
 
 Place the required CSV files into the corresponding day folders as noted below.
 
@@ -51,7 +48,7 @@ Place the required CSV files into the corresponding day folders as noted below.
 - `Day37_Logic.md` – Explanations and design notes.
 
 ### Data
-- Copy `shopsense_reviews-2.csv` into `week07/monday/`.
+- Copy `shopsense_reviews.csv` into `week07/monday/`.
 
 ### How to run
 
@@ -79,7 +76,7 @@ jupyter notebook Q2_TFIDF_HandCalc.ipynb
 - `Day38_Logic.md` – Explanations and design notes.
 
 ### Data
-- Copy `shopsense_reviews-2.csv` into `week07/tuesday/`.
+- Copy `shopsense_reviews.csv` into `week07/tuesday/`.
 
 ### Extra dependencies
 
@@ -118,7 +115,7 @@ jupyter notebook Q2_SimilarityComparison.ipynb
 - `Day39_Logic.md` – Explanations and design notes.
 
 ### Data
-- Copy `shopsense_reviews-2.csv` into `week07/wednesday/`.
+- Copy `shopsense_reviews.csv` into `week07/wednesday/`.
 
 ### Extra dependencies
 
@@ -148,10 +145,9 @@ jupyter notebook Q2_AspectSentiment.ipynb
 
 ### Files
 - `Day40_ReviewIntelligence.ipynb` – Single end‑to‑end notebook implementing sub‑steps 1–7 from the Friday assignment.
-- `Day40_Logic.md` – Explanations and design notes.
 
 ### Data
-- Copy `product_reviews.csv` (LMS checkpoint version of ShopSense reviews) into `week07/friday/`.
+- Copy `shopsense_reviews.csv` (LMS checkpoint version of ShopSense reviews) into `week07/friday/`.
 
 ### How to run
 
@@ -172,15 +168,3 @@ jupyter notebook Day40_ReviewIntelligence.ipynb
 - Reproducing and fixing a broken 94%‑accuracy majority‑class pipeline.
 
 ---
-
-## AI usage & prompts
-
-For any AI‑assisted work (e.g., drafting text or boilerplate code):
-- Prompts and brief critiques are stored alongside the relevant day (e.g., `prompts.md`).
-- Raw AI output is always reviewed, edited, and verified on the ShopSense datasets before committing.
-
-## Git conventions
-
-- Each day has **multiple commits** with descriptive messages (e.g., `Add BM25 scoring for Day 37 Q2`, `Implement cheap sense disambiguation`).
-- No `.env`, API keys, `__pycache__`, or large data files are committed.
-- All run steps and dependencies are documented either here or in the day‑specific READMEs.
